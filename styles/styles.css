@@ -282,6 +282,16 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
+
+.social ul {
+  display: flex;
+  justify-content: center;
+}
+.social .icon{
+  color: white;
+  font-size: 40px;
+  margin-right: 40px;
+}
 .privacy {
   margin: 50px 0px 20px 0px;
 }
