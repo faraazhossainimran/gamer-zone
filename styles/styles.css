@@ -487,7 +487,9 @@ nav ul li a {
   .action-item{
     width: 31%;
   }
-
+.overlay{
+  height: 88%;
+}
   /* footer section */
   .footer {
     width: 100%;
