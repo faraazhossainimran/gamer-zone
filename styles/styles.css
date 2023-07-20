@@ -228,6 +228,12 @@ nav ul li a {
   font-size: 24px;
   opacity: 0; /* Initially hidden */
 }
+.overlay .clr{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
 .online-items:hover .overlay {
   opacity: 1;
 }
