@@ -323,39 +323,57 @@ nav ul li a {
     width: 600px;
     display: flex;
 }
-.play-img{
-    width: 600px;
-    padding-left: 330px;
-}
+
 .play-style {
   color: #ff42a5;
   font-size: 36px;
   font-weight: 700;
   line-height: 60px; /* 125% */
 }
-.play-text{
-   margin-left: 100px;
-}
+
 .play-item h3{
     font-size: 48px;
     font-weight: 700;
     line-height: 60px; /* 125% */
 }
+.play-section{
+  width: 100%;
+}
+.play{
+  width: 1200px;
+  display: grid;
+  /* grid-template-columns: repeat(2,1fr); */
+  grid-template-columns: 600px 600px;
+  margin: 0 auto;
+}
+.play-item{
+  display: flex;
+}
+.play-text{
+font-size: 48px;
+font-weight: 700;
+line-height: 60px; /* 125% */
+margin: 50px 0px 23px 145px;
+}
+.play-prag{
+  margin-left: 145px;
+}
+.image-group{
 
-.container{
-    /* position: relative; */
 }
-.con-img{
-    width: 485px;
+.play-img{
+  padding-left: 140px;
+  width: 450px;
 }
-.inner{ 
-    /* transform: scale(0.25); */
-    transform: translate(-125px, -185px);
-    /* position: absolute; */
+.play-img2{
+  transform: translate(46px, -185px);
+  width: 200px;
 }
-.inner-img{
-    width: 230px;
-}
+
+
+
+
+
 @media  screen and (max-width: 576px) {
     .nav-items{
         flex-direction: column;
