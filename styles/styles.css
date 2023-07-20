@@ -5,9 +5,12 @@
   font-family: "Open Sans", sans-serif;
   font-family: "Work Sans", sans-serif;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
-
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -31,7 +34,7 @@ header {
   height: 100%;
 }
 .header-logo h3 {
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: 700;
 }
 .logo-styles {
@@ -78,8 +81,8 @@ nav ul li a {
   padding: 5px;
 }
 .follow-us-btn {
-  background-color: rgb(195, 195, 195);
   border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
 }
 
 .header-btn {
@@ -113,21 +116,25 @@ nav ul li a {
 .text-styles {
   color: #0b0223;
   /* text-align: center; */
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
   padding-top: 195px;
 }
 .goat {
   font-family: Work Sans;
-  font-size: 95px;
+  font-size: 6rem;
   font-weight: 800;
   text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .btn-primary {
-  border-radius: 48px;
+  border-radius: 3rem;
   background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 600px;
   text-transform: uppercase;
   padding: 21px 40px;
@@ -138,7 +145,7 @@ nav ul li a {
 .btn-secondary {
   border-radius: 48px;
   background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
-  font-size: 20px;
+  font-size: 1.3;
   font-weight: 600px;
   text-transform: uppercase;
   padding: 21px 40px;
@@ -167,14 +174,14 @@ nav ul li a {
 .online-text h3 {
   color: #0b0223;
   font-family: Work Sans;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
 }
 .online-text p {
   color: #534c64;
 
   font-family: Work Sans;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 30px; /* 166.667% */
 }
@@ -263,7 +270,7 @@ nav ul li a {
 }
 .logo h3 {
   text-align: center;
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: 700;
   color: white;
 }
@@ -287,10 +294,10 @@ nav ul li a {
   display: flex;
   justify-content: center;
 }
-.social .icon{
+.social .icon {
   color: white;
-  font-size: 40px;
-  margin-right: 40px;
+  font-size: 2.8rem;
+  margin-right: 2.3rem;
 }
 .privacy {
   margin: 50px 0px 20px 0px;
@@ -306,7 +313,7 @@ nav ul li a {
 .privacy ul li a {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
 }
@@ -316,7 +323,7 @@ nav ul li a {
 .gamer-bd p {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .logo img {
@@ -337,13 +344,13 @@ nav ul li a {
 
 .play-style {
   color: #ff42a5;
-  font-size: 48;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 60px; /* 125% */
 }
 
 .play-item h3 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 60px; /* 125% */
 }
@@ -357,7 +364,7 @@ nav ul li a {
   margin: 0 auto;
 }
 .play-text {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 60px; /* 125% */
   margin: 50px 0px 23px 145px;
@@ -365,8 +372,8 @@ nav ul li a {
 .play-prag {
   margin-left: 145px;
 }
-.image-group {
-}
+/* .image-group {
+} */
 .play-img {
   padding-left: 140px;
   width: 620px;
@@ -375,31 +382,73 @@ nav ul li a {
   transform: translate(46px, -185px);
   width: 200px;
 }
-
+.banner-text {
+  grid-area: banner-text;
+}
+.banner-image {
+  grid-area: banner-image;
+}
 @media screen and (max-width: 576px) {
   .nav-items {
     flex-direction: column;
+    width: 100%;
   }
   .banner-items {
-    flex-direction: column;
-    align-items: center;
-    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* flex-direction: column; */
+    width: 90%;
+    position: relative;
   }
-  .banner-bg {
-    display: none;
+  .online-text-content {
+    width: 90%;
+    margin: 0 auto;
   }
+
   .online-contents {
-    width: 700px;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
     /* gap: 20px; */
   }
+  .online-section{
+    margin-top: 130%;
+  }
+  .container {
+    grid-template-areas:
+      "banner-image"
+      "banner-text";
+  }
+  .banner-text {
+    margin-top: 300px;
+  }
+  .banner-image img {
+    width: 60%;
+  }
+  .banner-bg {
+    background-image: url(../images/Group14.png);
+    width: 100%;
+    height: 400px;
+    /* height: 100; */
+    background-repeat: no-repeat;
+  }
   .play-item {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .play-img{
+    width: 70%;
   }
   .footer {
     width: 100%;
   }
+  nav .nav-items ul{
+    grid-template-columns: column;
+  }
 }
+/* .play-item {
+  width: 600px;
+  display: flex;
+} */
