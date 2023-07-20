@@ -203,24 +203,39 @@ nav ul li a {
 .items img {
   width: 95%;
 }
-/* .overlay{
-    background: rgba(0,0,0,0.7);
-    position: absolute;
-    height: 99%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-}
-.items:hover .overlay{
-    opacity: 1;
-  } */
 
+/* test */
+.online-items{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 81%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the background color and opacity as needed */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border: 3px solid #F948B2;
+}
+.overlay h1 {
+  color: white;
+  font-size: 24px;
+  opacity: 0; /* Initially hidden */
+}
+.online-items:hover .overlay {
+  opacity: 1;
+}
+
+.online-items:hover .overlay h1 {
+  opacity: 1;
+}
+/* test */
 /* action section */
 .action-section {
   width: 100%;
